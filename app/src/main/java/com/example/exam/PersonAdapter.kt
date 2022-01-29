@@ -25,7 +25,8 @@ class PersonAdapter(private val activityFunctions: ActivityFunctions): RecyclerV
         with(holder.binding) {
 
             avatar.setImageResource(person.pictureRes)
-            tvTitle.text = person.name
+            tvName.text = person.name
+            tvSurname.text = person.surname
             tvDescription.text = person.minimalInfo
 
         }
